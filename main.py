@@ -38,7 +38,8 @@ def main():
     args = parse_argparse()
     frame_width, frame_height = args.webcam_resolution
 
-    cap = cv2.VideoCapture("rtsp://admin:228a8831Kaf_@192.168.0.48:554")
+    cap = cv2.VideoCapture(0)
+    # cap = cv2.VideoCapture("rtsp://admin:228a8831Kaf_@192.168.0.48:554")
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, frame_width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, frame_height)
 
